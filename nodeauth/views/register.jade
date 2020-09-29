@@ -1,12 +1,12 @@
 extends layout
 
 block content
- h2.page-header Register
- p Please register using the form below
+ h2.page-header.title Register
+ p.title Please register using the form below
     if errors
         each error, i in errors
             div.alert.alert-danger #{error.msg}
- form(method='post', action='/users/register', enctype='multipart/form-data')
+ form.title(method='post', action='/users/register', enctype='multipart/form-data')
     .form-group
         label Name
         input.form-control(name='name', type='text', placeholder='Enter name')

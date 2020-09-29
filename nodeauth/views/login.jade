@@ -1,9 +1,9 @@
 extends layout
 
 block content
- h2.page-header Login
- p Please login below
- form(method='post', action='users/login')
+ h2.page-header.title Login
+ p.title Please login below
+ form.title(method='post', action='/users/login')
     .form-group
         label Username
         input.form-control(name='username', type='text', placeholder='Enter Username')
